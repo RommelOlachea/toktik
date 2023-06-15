@@ -29,3 +29,6 @@ class MyApp extends StatelessWidget {
 
 //A, le indica que el constructor del provider se va a lanzar inmediantamente en el create
 //del provider y no hasta que se utilize en algun widget
+// el .. es un operador de cascada, el cual le indica que una vez creada la instancia, podemos accesar al metodo
+
+
