@@ -12,8 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (_) => DiscoverProvider(),)
+      providers: [    //el .. es un operador de cascada
+        ChangeNotifierProvider(
+          lazy: false, //A
+          create: (_) => DiscoverProvider()..loadNextPage(),)
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -24,3 +26,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+//A, le indica que el constructor del provider se va a lanzar inmediantamente en el create
+//del provider y no hasta que se utilize en algun widget
