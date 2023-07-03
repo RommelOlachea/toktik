@@ -38,4 +38,12 @@ class MyApp extends StatelessWidget {
 //del provider y no hasta que se utilize en algun widget
 // el .. es un operador de cascada, el cual le indica que una vez creada la instancia, podemos accesar al metodo
 
+// En esta linea 
+  // final videoPostRepository =
+  //       VideoPostsRepositoryImp(videoDataSource: LocalVideoDataSource());
+// y le asignamos el repositorio que queremos usar, para poder pasarlo al provider,
+// y este solamente le pida los datos
+
+//de tal forma que si cambiamos el origen de datos, solo bastara con cambiarle el datasource
+//al resositorio. =) 
 
