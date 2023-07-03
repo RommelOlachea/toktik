@@ -3,9 +3,9 @@ import 'package:toktik/domain/entities/video_post.dart';
 
 import '../../domain/respositories/video_post_repository.dart';
 
-class VideoPostRepositoryImp implements VideoPostRepository {
+class VideoPostsRepositoryImp implements VideoPostRepository {
   final VideoPostDatasource videoDataSource;
-  VideoPostRepositoryImp({required this.videoDataSource});
+  VideoPostsRepositoryImp({required this.videoDataSource});
 
   @override
   Future<List<VideoPost>> getFavoritesVideosByUser(String userID) {
@@ -17,3 +17,7 @@ class VideoPostRepositoryImp implements VideoPostRepository {
     return videoDataSource.getTrendingVideosByPage(page);
   }
 }
+
+
+//nota: la linea final VideoPostDatasource videoDataSource; el tipo que regresa es del
+//tipo de la clase abstracta, no de la clase que la esta implementando
