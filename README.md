@@ -1,16 +1,23 @@
 # toktik
 
-A new Flutter project.
+Proyecto con Flutter, que visualiza una serie de videos verticales, al estilo tiktok
 
-## Getting Started
+## Temas vistos
 
-This project is a starting point for a Flutter application.
+Este es un proyecto desarrollado con el curso de devtalles., los temas puntuales vistos son: 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Manejo de assets
+- Paquetes
+- Gesture Detector
+- Posicionamiento de Widgets
+- Mappers
+- Gradientes
+- Loops
+- Aserciones
+- Stacks
+- Controladores de video
+- Manejador de estado Provider
+- Repositorios y Datasources
+- Implementacones de Repositorios y Datasources
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
